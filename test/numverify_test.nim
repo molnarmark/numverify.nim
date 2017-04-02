@@ -1,6 +1,12 @@
 import numverify
 
-var verifier = newNumVerifier("ce94fe20042e1540d1fd435ca74f9662")
+var verifier = newNumVerifier("your-api-key")
 
-if verifier.verify("+36303234489").valid:
-  echo "valid"
+if verifier.verify("+2342342342342").valid:
+  echo "Number was valid!"
+else:
+  echo "Number is invalid.."
+
+# You can also access the fields like so:
+var verifyResult = verifier.verify("+2342342342342")
+echo verifyResult.countryName
