@@ -1,5 +1,4 @@
 # Numverify.nim
-- - - -
 
 Numverify.nim is a simple wrapper around the Numverify Phone Number validator REST API.
 
@@ -12,7 +11,7 @@ proc verify*(client: NumVerifier, number, countryCode: string): NumVerifyReport
 
 ### NumVerifyReport
 
-Accessable fields
+Accessible fields:
 ```nim
 valid*: bool
 number*: string
